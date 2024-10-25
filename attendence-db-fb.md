@@ -31,3 +31,9 @@ Build an **Attendance Tracker App** to mark student attendance and back up the d
 2. **Attendance Indicators (5 Marks)** – Mark present/absent students visually.  
 
 ---
+
+### **Submission (5 Marks Total)**  
+- **Code Submission (3 Marks)**  
+- **Demo Video (2 Marks)**
+
+---
