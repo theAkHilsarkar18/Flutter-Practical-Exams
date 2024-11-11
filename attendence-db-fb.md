@@ -28,7 +28,7 @@ Build an **Attendance Tracker App** to mark student attendance and back up the d
 
 ### **UI Requirements (10 Marks)**  
 1. **Layout (5 Marks)** – Use ListView for attendance records.  
-2. **Attendance Indicators (5 Marks)** – Mark present/absent students visually.  
+2. **Attendance Indicators (5 Marks)** – Mark present/absent students by switch.  
 
 ---
 
