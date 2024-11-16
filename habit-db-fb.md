@@ -7,6 +7,7 @@ Develop a **Habit Tracker** app that stores habits in SQLite and syncs them with
 
 ---
 
+
 #### **Features (35 Marks Total)**  
 
 1. **Habit Management with SQLite (15 Marks)**  
