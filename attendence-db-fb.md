@@ -34,6 +34,6 @@ Build an **Attendance Tracker App** to mark student attendance and back up the d
 
 ### **Submission (5 Marks Total)**  
 - **Code Submission (3 Marks)**  
-- **Demo Video (2 Marks)**
+- **Demo Video & UI Screenshots (2 Marks)**
 
 ---
