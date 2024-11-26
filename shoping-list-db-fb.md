@@ -1,86 +1,90 @@
+
+---
+
 ### Practical Exam Question (50 Marks)  
 **Topic:** Flutter Application with SQLite and Firebase Integration  
 
 ---
 
-#### **Question: Build a Flutter Shopping List Application using SQLite and Firebase**
+#### **Question: Build a Flutter Grocery List Application with SQLite and Firebase**
 
 **Time Limit:** The task should be completed within **3 hours**.
 
 **Problem Statement:**
 
-You are required to build a Shopping List application using Flutter. The app should store items locally in SQLite, allow users to categorize items, and synchronize the list with Firebase for cloud backup. Users should also be able to search and filter items.
+You are required to build a Grocery List application using Flutter. The app should manage grocery items locally with SQLite, categorize them, and back up the data using Firebase. Users should have the ability to search, filter, and sort items based on various criteria.
 
 ---
 
 ### **Features to Implement (35 Marks Total)**
 
-1. **Shopping List Management with SQLite (15 Marks)**  
-   - Create a local SQLite database to store shopping list items.
-   - Each item should have the following fields:
-     - Item Name (String)
-     - Quantity (Number)
-     - Category (e.g., Groceries, Electronics, Clothing)
-     - Purchased Status (Boolean - True/False)
-   - Implement **CRUD** (Create, Read, Update, Delete) operations for managing shopping list items:
-     - **Add a new item** (3 Marks)
-     - **Read all items** (Display them in a ListView) (3 Marks)
-     - **Update item details** (3 Marks)
-     - **Delete an item** (3 Marks)
-     - **Mark item as purchased** (3 Marks)
+1. **Grocery List Management with SQLite (15 Marks)**  
+   - Create a local SQLite database to store grocery list items.  
+   - Each item should have the following fields:  
+     - Item Name (String)  
+     - Quantity (Number)  
+     - Category (e.g., Vegetables, Dairy, Household)  
+     - Expiration Date (Date)  
+     - Purchased Status (Boolean - True/False)  
+   - Implement **CRUD** (Create, Read, Update, Delete) operations for managing grocery items:  
+     - **Add a new item with category selection** (3 Marks)  
+     - **Display all items** in a categorized ListView (3 Marks)  
+     - **Update item details** including quantity and expiration date (3 Marks)  
+     - **Delete an item from the list** (3 Marks)  
+     - **Mark items as purchased/unpurchased** (3 Marks)
 
 2. **Firebase Integration for Cloud Backup (10 Marks)**  
-   - Implement Firebase Authentication to allow users to log in or sign up using email/password.
-   - Sync the shopping list with Firebase Firestore:
-     - **Upload shopping list items** to Firestore for backup (5 Marks)
-     - **Fetch items** from Firestore and update the local SQLite database (5 Marks)
+   - Implement Firebase Authentication for user sign-in/up using email/password.  
+   - Sync grocery items with Firebase Firestore:  
+     - **Upload grocery items** to Firestore for cloud backup (5 Marks)  
+     - **Fetch and sync items** from Firestore to update the local SQLite database (5 Marks)
 
-3. **Search and Filter Items (5 Marks)**  
-   - Implement a search feature that allows users to search items by name.
-   - Provide filtering options to show items by category (e.g., Groceries, Electronics).
-   - Add a filter to show only purchased or unpurchased items.
+3. **Sorting and Filtering Items (5 Marks)**  
+   - Implement sorting options (e.g., by category, expiration date, or quantity).  
+   - Add filtering options to show items based on their category (e.g., Vegetables, Dairy).  
+   - Provide an option to display only purchased or unpurchased items.
 
-4. **Offline Support (5 Marks)**  
-   - Ensure the app works offline using SQLite, allowing the user to manage items.
-   - Synchronize the list with Firebase when the device regains internet connection.
+4. **Offline Data Management (5 Marks)**  
+   - Ensure the app is fully functional offline using SQLite for data storage.  
+   - Automatically synchronize with Firebase Firestore when the internet connection is restored.
 
 ---
 
 ### **UI Requirements (10 Marks Total)**
 
-1. **App Layout & Design (5 Marks)**  
-   - Design a clean and simple UI using Flutter widgets like `ListView`, `TextField`, `DropdownButton`, and `CheckBox` for managing shopping items.
-   - Include clear navigation between the shopping list, item details, and settings.
+1. **User Interface Design (5 Marks)**  
+   - Design an easy-to-navigate UI using Flutter widgets like `ListView`, `DatePicker`, `DropdownButton`, and `CheckBox` for managing grocery items.  
+   - Include clear navigation between grocery list, item details, and user settings.
 
-2. **Shopping List Display (5 Marks)**  
-   - Display the shopping list with indicators for purchased and unpurchased items.
-   - Use color coding or icons to differentiate between categories (e.g., a cart icon for groceries).
-   - Provide a search bar and filters to organize the shopping list effectively.
+2. **Grocery List Visualization (5 Marks)**  
+   - Use distinct visual cues like icons or colors to differentiate between item categories (e.g., green for Vegetables, blue for Dairy).  
+   - Implement a search bar to quickly locate items.  
+   - Display item expiration dates and highlight those close to expiration.
 
 ---
 
 ### **Submission Requirements (5 Marks Total)**
 
 1. **Code Submission (3 Marks)**  
-   - Submit the complete code on a public GitHub repository.
-   - Ensure the code is well-commented and includes a README file with instructions on how to set up and run the app.
+   - Submit the full source code to a public GitHub repository.  
+   - Ensure the code is documented, with a README file explaining how to set up and use the application.
 
 2. **Demo Video (2 Marks)**  
-   - Record a short video demonstrating the main features of the app (CRUD operations, cloud sync, search/filter, and offline mode).
+   - Record a video that demonstrates the app’s core features, including CRUD operations, Firebase sync, filtering/sorting, and offline capabilities.
 
 ---
 
 ### **Mark Distribution Summary:**
 
 - **Features (35 Marks)**  
-   - SQLite Shopping List Management (15 Marks)  
+   - Grocery List Management with SQLite (15 Marks)  
    - Firebase Cloud Backup (10 Marks)  
-   - Search and Filter Items (5 Marks)  
-   - Offline Support (5 Marks)
+   - Sorting and Filtering Items (5 Marks)  
+   - Offline Data Management (5 Marks)
 
 - **UI Design (10 Marks)**  
-   - App Layout & Design (5 Marks)  
-   - Shopping List Display (5 Marks)
+   - User Interface Design (5 Marks)  
+   - Grocery List Visualization (5 Marks)
 
 - **Submission (5 Marks)**  
    - Code Submission (3 Marks)  
