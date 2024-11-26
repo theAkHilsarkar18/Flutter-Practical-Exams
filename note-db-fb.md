@@ -1,68 +1,69 @@
-### Practical Exam Question (50 Marks)  
-**Topic:** Flutter Application with SQLite and Firebase Integration  
+### **Smart Notes App**  
+**Time Limit:** 3 Hours  
+**Marks:** 50  
+
+**Problem Statement:**  
+
+Develop a **Smart Notes App** using Flutter. The app should allow users to create, manage, and categorize notes locally using SQLite and synchronize them with Firebase for cloud backup. Additional features like search, filter, and sorting should make it easier to manage a large set of notes. The task should be completed within **3 hours**.
 
 ---
 
-#### **Question: Build a Flutter Note-Taking Application using SQLite and Firebase**
-
-**Problem Statement:**
-
-You are tasked with developing a basic Note-Taking application using Flutter. The app should allow users to store their notes locally in SQLite and synchronize them with Firebase for backup. Users should be able to categorize their notes and search through them. The task should be completed within **3 hours**.
-
----
-
-### **Features to Implement (35 Marks Total)**
+### **Features to Implement (35 Marks Total)**  
 
 1. **Note Management with SQLite (15 Marks)**  
-   - Create a local SQLite database to store notes.
-   - Each note should have the following fields:
-     - Title (String)
-     - Content (String)
-     - Date Created (Date)
-     - Category (e.g., Work, Personal, Miscellaneous)
-   - Implement **CRUD** (Create, Read, Update, Delete) operations for managing notes:
+   - Create a local SQLite database to handle note storage.
+   - Each note should include:
+     - **Title** (String)
+     - **Content** (String)
+     - **Date Created** (Date)
+     - **Category** (e.g., Work, Personal, Study, Ideas)
+     - **Priority** (e.g., High, Medium, Low)
+   - Implement **CRUD** operations for note management:
      - **Create a new note** (3 Marks)
-     - **Read all notes** (Display them in a ListView) (3 Marks)
+     - **Read all notes** (Display in a ListView/GridView) (3 Marks)
      - **Update note details** (3 Marks)
      - **Delete a note** (3 Marks)
-     - **Categorize notes** (3 Marks)
+     - **Categorize and prioritize notes** (3 Marks)
 
-2. **Firebase Integration for Cloud Backup (10 Marks)**  
-   - Implement Firebase Authentication for user login/signup using email/password.
-   - Backup notes to Firebase Firestore and allow restoring them:
-     - **Upload notes** to Firestore for backup (5 Marks)
-     - **Fetch notes** from Firestore and restore to local SQLite when needed (5 Marks)
+2. **Firebase Cloud Backup & Sync (10 Marks)**  
+   - Implement user authentication using Firebase (Email/Password or Google).
+   - Enable syncing of notes with Firebase Firestore:
+     - **Backup notes** to Firestore for secure cloud storage (5 Marks)
+     - **Restore notes** from Firestore to local SQLite database (5 Marks)
 
-3. **Search and Filter Notes (5 Marks)**  
-   - Implement a search feature that allows users to search notes by title or content.
-   - Provide filtering options to display notes by category.
+3. **Enhanced Search and Advanced Filters (5 Marks)**  
+   - Implement a search feature to look for notes by title, content, or category.
+   - Add filter options to display notes by category or priority.
 
-5. **Basic Sorting (5 Marks)**  
-   - Add functionality to sort notes either by creation date or by category.
-
----
-
-### **UI Requirements (10 Marks Total)**
-
-1. **App Layout & Design (5 Marks)**  
-   - Design a simple, intuitive, and responsive UI.
-   - Use Flutter widgets like `TextField`, `ListView`, `DropdownButton`, etc., for managing and displaying notes.
-   - Include basic navigation between the note list and note editor screens.
-
-2. **Note List UI & Sorting Options (5 Marks)**  
-   - Display a list of notes with clear separation by category.
-   - Include a search bar to search through notes and an option to sort them by date or category.
+4. **Improved Sorting Functionality (5 Marks)**  
+   - Allow users to sort notes by:
+     - Date created (Ascending/Descending)
+     - Priority (High to Low / Low to High)
+     - Alphabetical order (Title)
 
 ---
 
-### **Submission Requirements (5 Marks Total)**
+### **UI & User Experience Requirements (10 Marks Total)**  
+
+1. **User-Friendly Layout & Design (5 Marks)**  
+   - Design a clean, intuitive interface with easy navigation.
+   - Use Flutter widgets like `TextField`, `ListView`, `DropdownButton`, and `GridView` for better note management.
+   - Implement a tab-based or bottom navigation to switch between different note categories or priority levels.
+
+2. **Note List Visualization & Sorting Options (5 Marks)**  
+   - Display notes with color coding or icons indicating priority or category.
+   - Include a search bar for quick access and buttons or drop-downs to sort notes by different criteria.
+
+---
+
+### **Submission Requirements (5 Marks Total)**  
 
 1. **Code Submission (3 Marks)**  
-   - Submit the complete code on a public GitHub repository.
-   - Ensure the code is properly commented, with a clear README file explaining how to set up and run the app.
+   - Submit the complete source code on a GitHub repository.
+   - Ensure the code is well-documented, and include a README file with setup and usage instructions.
 
-2. **Demo Video (2 Marks)**  
-   - Record a short video demonstrating the main features of the app (CRUD operations, cloud backup, and search/filter functionality).
+2. **Feature Demonstration Video (2 Marks)**  
+   - Record a short demo video showcasing the app’s core features (CRUD operations, cloud sync, search, and sorting).
 
 ---
 
@@ -70,17 +71,17 @@ You are tasked with developing a basic Note-Taking application using Flutter. Th
 
 - **Features (35 Marks)**  
    - SQLite Note Management (15 Marks)  
-   - Firebase Cloud Backup (10 Marks)  
-   - Search and Filter Notes (5 Marks)  
-   - Basic Sorting (5 Marks)
+   - Firebase Cloud Sync (10 Marks)  
+   - Enhanced Search & Filtering (5 Marks)  
+   - Sorting Features (5 Marks)
 
-- **UI Design (10 Marks)**  
-   - App Layout & Design (5 Marks)  
-   - Note List UI & Sorting Options (5 Marks)
+- **UI & Design (10 Marks)**  
+   - User-Friendly Layout & Navigation (5 Marks)  
+   - Note List Visualization & Sorting UI (5 Marks)
 
 - **Submission (5 Marks)**  
-   - Code Submission (3 Marks)  
-   - Demo Video (2 Marks)
+   - GitHub Code Submission (3 Marks)  
+   - Feature Demo Video (2 Marks)
 
 ---
 
