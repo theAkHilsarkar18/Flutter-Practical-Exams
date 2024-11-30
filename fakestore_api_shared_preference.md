@@ -3,6 +3,8 @@
 ## Task Overview
 Develop a Flutter application that integrates with an eCommerce API and utilizes Shared Preferences to store and retrieve user data, such as shopping cart details. The app should meet the specified feature and UI requirements outlined below.
 
+API URL: https://fakestoreapi.com/products
+
 ### Marking Criteria
 
 ### 1. **Features (35 Marks)**
